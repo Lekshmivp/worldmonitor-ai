@@ -9,12 +9,12 @@ AI-Powered Geopolitical Intelligence & Monitoring Platform
 
 WorldMonitor AI is a full-stack geopolitical monitoring system combining:
 
-- 🌐 Interactive global dashboard
-- 🛰 Conflict & infrastructure visualization
-- 📰 Multi-source intelligence feeds
-- 🤖 AI-powered summarization and analysis
-- 🎥 RTSP integration (UAE surveillance use case)
-- 🧠 LangChain + Ollama powered reasoning
+- 🌐 Interactive global dashboard  
+- 🛰 Conflict & infrastructure visualization  
+- 📰 Multi-source intelligence feeds  
+- 🤖 AI-powered summarization and analysis  
+- 🎥 RTSP integration (UAE surveillance use case)  
+- 🧠 LangChain + Ollama powered reasoning  
 
 This project extends the original visualization platform by integrating a custom AI backend capable of contextual geopolitical analysis and intelligence summarization.
 
@@ -24,7 +24,7 @@ This project extends the original visualization platform by integrating a custom
 
 Frontend platform originally cloned from:
 
-👉 https://github.com/koala73/worldmonitor
+👉 https://github.com/koala73/worldmonitor  
 
 This repository extends that system with:
 
@@ -48,48 +48,53 @@ Built with:
 - Custom geopolitical analysis tools
 - Intelligence feed processing
 
-### AI Features
+### ✨ AI Features
 
-- Real-time geopolitical summaries
-- Conflict & military movement analysis
-- Strategic intelligence briefing
-- Context-aware LLM reasoning
-- Multi-source news aggregation
-- UAE RTSP stream handling support
+- Real-time geopolitical summaries  
+- Conflict & military movement analysis  
+- Strategic intelligence briefing generation  
+- Context-aware LLM reasoning  
+- Multi-source news aggregation  
+- UAE RTSP stream handling support  
 
 ---
 
 ## 🏗 System Architecture
+
+```text
 Frontend (Vite + TypeScript)
-↓
+        ↓
 API Proxy (/agent)
-↓
+        ↓
 FastAPI Backend
-↓
+        ↓
 LangChain Agent
-↓
+        ↓
 Ollama (Local LLM)
-↓
+        ↓
 News / Intelligence / RTSP Sources
+```
 
 ---
 
 ## 📁 Project Structure
+
+```text
 worldmonitor-ai/
 │
-├── worldmonitor/ # Frontend dashboard (Vite + TS)
+├── worldmonitor/           # Frontend dashboard (Vite + TS)
 │
-├── worldmonitor-agent/ # AI Backend
-│ ├── app.py
-│ ├── agent.py
-│ ├── rag.py
-│ ├── tools.py
-│ ├── news_fetcher.py
-│ ├── requirements.txt
+├── worldmonitor-agent/     # AI Backend
+│   ├── app.py
+│   ├── agent.py
+│   ├── rag.py
+│   ├── tools.py
+│   ├── news_fetcher.py
+│   ├── requirements.txt
 │
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -101,45 +106,79 @@ worldmonitor-ai/
 cd worldmonitor
 npm install
 npm run dev
+```
 
 Runs at:
+
+```
 http://localhost:3000
+```
+
+---
 
 ### 2️⃣ Backend Setup
+
+```bash
 cd worldmonitor-agent
 python -m venv venv
-venv\Scripts\activate     # Windows
+venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 python app.py
+```
 
 Runs at:
+
+```
 http://localhost:5000
+```
 
-🔌 Ollama Setup
+---
 
-Install Ollama: https://ollama.ai
-Pull a model: ollama pull mistral
+## 🔌 Ollama Setup
+
+Install Ollama:
+
+https://ollama.ai  
+
+Pull a model:
+
+```bash
+ollama pull mistral
+```
 
 Make sure Ollama is running before starting the backend.
 
-🛠 Technologies Used
-Frontend :
-Vite
-TypeScript
-WebSockets
-Geospatial visualization
+---
 
-Backend:
-Python
-FastAPI
-LangChain
-Ollama
-RAG pipeline
-REST APIs
+## 🛠 Technologies Used
 
-👩‍💻 Author
+### Frontend
+- Vite  
+- TypeScript  
+- WebSockets  
+- Geospatial visualization  
+
+### Backend
+- Python  
+- FastAPI  
+- LangChain  
+- Ollama  
+- RAG pipeline  
+- REST APIs  
+
+---
+
+## 👩‍💻 Author
 
 Extended & Integrated by:
-Lekshmi V P
-Senior AI Research Developer
-Computer Vision & Intelligence Systems
+
+**Lekshmi V P**  
+Senior AI Research Developer  
+Computer Vision & Intelligence Systems  
+
+---
+
+## ⚠️ Disclaimer
+
+All geopolitical data sources belong to their respective providers.  
+This project is intended for research and monitoring purposes only.
